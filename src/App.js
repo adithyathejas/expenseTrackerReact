@@ -31,7 +31,7 @@ function App() {
  }
     return (
     
-      <div>
+      <div align="center" justify="center">
         <h2>Let's get started!</h2>
         {array} 
       </div>
