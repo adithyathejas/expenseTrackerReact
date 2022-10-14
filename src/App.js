@@ -1,6 +1,8 @@
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
+import Card from "./components/UI/Card"
 
-function App() {
+
+const App=()=> {
   const expenses = [
     {
       id: 'e1',
@@ -31,10 +33,10 @@ function App() {
  }
     return (
     
-      <div align="center" justify="center">
+      <Card>
         <h2>Let's get started!</h2>
         {array} 
-      </div>
+      </Card>
     );
   }
   
