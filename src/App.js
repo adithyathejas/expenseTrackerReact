@@ -24,19 +24,21 @@ const App=()=> {
       title: 'New Desk (Wooden)',
       amount: 450,
       date: new Date(2021, 5, 12),
-      LocationOfExpenditure : 'ANILKUMAR FURNITURES, TVM'
+      LocationOfExpenditure : 'ANI FURNITURES, TVM'
     },
   ];
  const array=[]
   for(let i=0;i<expenses.length;i++){
     array.push(<ExpenseItem title={expenses[i].title} amount={expenses[i].amount} date={expenses[i].date} LocationOfExpenditure = {expenses[i].LocationOfExpenditure}  ></ExpenseItem>)
  }
-    return (
-    
-      <Card>
-        <h2>Let's get started!</h2>
-        {array} 
-      </Card>
+    return (<Card>
+           <h2>Let's get started!</h2>
+           <div id="root">
+           {array} 
+           </div>
+      
+    </Card>
+       
     );
   }
   
