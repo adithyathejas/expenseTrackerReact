@@ -2,6 +2,7 @@
 
 import ExpenseItem from "./components/Expenses/ExpenseItem";
 import Card from "./components/UI/Card"
+import ExpenseForm from "./components/ExpenseForm/ExpenseForm"
 
 
 
@@ -35,7 +36,7 @@ const App=()=> {
     array.push(<ExpenseItem title={expenses[i].title} amount={expenses[i].amount} date={expenses[i].date} LocationOfExpenditure = {expenses[i].LocationOfExpenditure}  ></ExpenseItem>)
  }
     return (<Card>
-           <h2>Let's get started!</h2>
+           <ExpenseForm></ExpenseForm>
            <div id="root">
            {array} 
            </div>
