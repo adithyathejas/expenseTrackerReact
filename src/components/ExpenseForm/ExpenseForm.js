@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import  {Card}  from '../UI/Card';
 const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
@@ -37,7 +38,7 @@ const titleChangeHandler = (event) => {
      setEnteredLocation('')
   }
 
-    return <div>
+    return <Card>
         <form onSubmit={submitionHandler}> 
             <div>
                 <label>Title</label>
@@ -61,7 +62,7 @@ const titleChangeHandler = (event) => {
             </div>
             <button type="submit" >Add Expense </button>
         </form>
-    </div>
+    </Card>
 
 }
 
