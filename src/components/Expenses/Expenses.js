@@ -5,15 +5,14 @@ import Filter from './filter';
 import React, {useState} from 'react'
 
 const Expense = (props) =>{
-    const [filterYear,setFilterYear] = useState('2019')
+    const [filterYear,setFilterYear] = useState('0')
     const expenses= props.expenseValue
     const filterChangeHandler = (selectedYear)=>{
         setFilterYear(selectedYear)
     }
 
-    const filteredExpenses = expenses.filter((expense)=>{
-        console.log(expense.date.getFullYear())
-        return expense.date.getFullYear()== filterYear
+    const filteredExpenses = filterYear==='0'? expenses :  expenses.filter((expense)=>{
+        return expense.date.getFullYear().toString() === filterYear
     })
      
     var expenseitems = filteredExpenses.map((expense)=>{
