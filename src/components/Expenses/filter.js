@@ -7,7 +7,7 @@ const FilterByYear = (props)=>{
 
 
   const dropdownChangeHandler = (event) => {
-    // props.onChangeFilter(event.target.value);
+    props.onChangeFilter(event.target.value);
   };
 
   return (
