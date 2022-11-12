@@ -2,6 +2,11 @@
 import ExpenseForm from "./components/ExpenseForm/ExpenseForm";
 import { useState } from "react";
 import Expenses from "./components/Expenses/Expenses"
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 
 
 const expenses = [
@@ -9,14 +14,14 @@ const expenses = [
     id: "e1",
     title: "Toilet Paper",
     amount: 94.12,
-    date: new Date(2020, 7, 14),
+    date: new Date(2019, 7, 14),
     LocationOfExpenditure: "Dhanya supermarket",
   },
   {
     id: "e2",
     title: "New TV",
     amount: 799.49,
-    date: new Date(2021, 2, 12),
+    date: new Date(2022, 2, 12),
     LocationOfExpenditure: "Samsung Electronics",
   },
   {

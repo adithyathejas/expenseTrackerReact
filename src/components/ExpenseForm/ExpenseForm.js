@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import  {Card}  from '../UI/Card';
+import Button from "@mui/material/Button"
+import { Input } from '@mui/material';
 const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
@@ -41,26 +43,26 @@ const titleChangeHandler = (event) => {
     return <Card>
         <form onSubmit={submitionHandler}> 
             <div>
-                <label>Title</label>
-                <input type='Text' value={enteredTitle} onChange={titleChangeHandler}></input>
+                <label>Title &nbsp;</label>
+                <Input type='Text' value={enteredTitle} onChange={titleChangeHandler}></Input>
                 {enteredTitle}
             </div>
             <div>
-                <label>Amount</label>
-                <input type='number' value={enteredAmount} onChange={amountChangeHandler}></input>
+                <label>Amount &nbsp;</label>
+                <Input type='number' value={enteredAmount} onChange={amountChangeHandler}></Input>
                 {enteredAmount}
             </div>
             <div>
-                <label>Date</label>
-                <input type='date' value={enteredDate}  min='2000-01-01' onChange={dateChangeHandler}></input>
+                <label>Date&nbsp;  </label>
+                <Input type='date' value={enteredDate}  min='2000-01-01' onChange={dateChangeHandler}></Input>
                 {enteredDate}
             </div>
             <div>
-                <label>Location Of Expenditure</label>
-                <input type='Text'  value={enteredLocation} onChange={LocationChangeHandler}></input>
+                <label>Location Of Expenditure &nbsp;</label>
+                <Input type='Text'  value={enteredLocation} onChange={LocationChangeHandler}></Input>
                 {enteredLocation}
             </div>
-            <button type="submit" >Add Expense </button>
+            <Button variant="contained" type="submit" >Add Expense </Button>
         </form>
     </Card>
 
