@@ -61,10 +61,12 @@ const App = () => {
   };
 
   return (
-    <div>
+    
+        <div>
       <ExpenseForm onSaveExpenseData={saveExpenseDataHandler}></ExpenseForm>
       <Expenses expenseValue={expense}></Expenses>
     </div>
+    
   );
 };
 
