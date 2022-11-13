@@ -34,13 +34,14 @@ const titleChangeHandler = (event) => {
 
 
      props.onSaveExpenseData(submition)
+     props.onClick()
      setEnteredTitle('')
      setEnteredDate('')
      setEnteredAmount('')
      setEnteredLocation('')
   }
 
-    return <Card>
+    return <Card style={{position:'fixed'}}>
         <form onSubmit={submitionHandler}> 
             <div>
                 <label>Title &nbsp;</label>
@@ -63,6 +64,7 @@ const titleChangeHandler = (event) => {
                 {enteredLocation}
             </div>
             <Button variant="contained" type="submit" >Add Expense </Button>
+            <Button  onClick={props.onClick}>cancel</Button>
         </form>
     </Card>
 

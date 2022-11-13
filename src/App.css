@@ -1,0 +1,14 @@
+.fixdiv {
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+     z-index: 1000;
+     height:100vh;
+     align-content: center;
+     margin: 5cm;
+     margin-top: 0;
+
+    }
+    

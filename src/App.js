@@ -1,11 +1,12 @@
 
-import ExpenseForm from "./components/ExpenseForm/ExpenseForm";
 import { useState } from "react";
 import Expenses from "./components/Expenses/Expenses"
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import './App.css'
+import NewExpense from "./components/ExpenseForm/NewExpense";
 
 
 
@@ -62,8 +63,8 @@ const App = () => {
 
   return (
     
-        <div>
-      <ExpenseForm onSaveExpenseData={saveExpenseDataHandler}></ExpenseForm>
+        <div  className="fixdiv">
+      <NewExpense onSaveExpenseData={saveExpenseDataHandler} ></NewExpense>
       <Expenses expenseValue={expense}></Expenses>
     </div>
     
