@@ -27,7 +27,7 @@ const titleChangeHandler = (event) => {
      event.preventDefault();
      const submition = {
         title: enteredTitle,
-        amount: enteredAmount,
+        amount: +enteredAmount,
         date: new Date(enteredDate),
         LocationOfExpenditure: enteredLocation
      }
